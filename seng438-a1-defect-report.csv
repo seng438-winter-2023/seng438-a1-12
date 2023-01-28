@@ -1,0 +1,275 @@
+Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project lead id,Project description,Priority,Resolution,Assignee,Assignee Id,Reporter,Reporter Id,Creator,Creator Id,Created,Updated,Last Viewed,Resolved,Fix versions,Due date,Votes,Labels,Description,Environment,Watchers,Watchers Id,Original estimate,Remaining Estimate,Time Spent,Work Ratio,Σ Original Estimate,Σ Remaining Estimate,Σ Time Spent,Security Level,Inward issue link (Cloners),Outward issue link (Cloners),Attachment,Custom field (Actual end),Custom field (Actual start),Custom field (Category),Custom field (Change reason),Custom field (Change risk),Custom field (Change type),Custom field (Compass),Custom field (Development),Custom field (Epic Color),Custom field (Epic Name),Custom field (Epic Status),Custom field (Impact),Custom field (Issue color),Custom field (Locked forms),Custom field (Open forms),Custom field (Rank),Custom field (Request Type),Custom field (Start date),Custom field (Story point estimate),Custom field (Submitted forms),Custom field (Target end),Custom field (Target start),Custom field (Team),Custom field (Total forms),Custom field ([CHART] Date of First Response),Comment,Status Category
+RT (V1.1)  - Deposit adds incorrect amount of funds to money market,GD438-35,10034,Task,In Progress,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,,,,Jack Barrie,63d19e42ed33fd0707b90a2a,Jack Barrie,63d19e42ed33fd0707b90a2a,26/Jan/23 2:49 PM,26/Jan/23 2:50 PM,26/Jan/23 7:13 PM,,,,0,,"Input:
+
+Login with card 2, select deposit, deposit $20
+
+Expected output:
+
+System prints receipt and adds $20 to money market
+
+Actual Output:
+
+System adds $19.90 to account",,Jack Barrie,63d19e42ed33fd0707b90a2a,,,,,,,,,,GD438-23,,,,,,,,,,,,,,,,,0|hzzzzt:,,,,,,,,,,,In Progress
+RT (V1.1) - Deposit adds incorrect amount of funds to chequing account,GD438-34,10033,Task,In Progress,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,,,,Jack Barrie,63d19e42ed33fd0707b90a2a,Jack Barrie,63d19e42ed33fd0707b90a2a,26/Jan/23 2:48 PM,26/Jan/23 2:48 PM,26/Jan/23 7:13 PM,,,,0,,"Input:
+
+Login, select deposit, select chequing, deposit $100
+
+Expected output:
+
+System accepts funds and adds $100 to chequing account
+
+Actual Output:
+
+System adds $99.90 to chequing account",,Jack Barrie,63d19e42ed33fd0707b90a2a,,,,,,,,,,,,,,,,,,,,,,,,,,,0|hzzzzv:,,,,,,,,,,,In Progress
+ET (V1.0) Transfer - Making a transfer to or from money market account,GD438-33,10032,Task,In Progress,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,26/Jan/23 11:11 AM,26/Jan/23 11:40 AM,26/Jan/23 7:13 PM,,1.0,,0,,"Initial state of the system: System is displaying amount to be transferred.
+
+Input: Enter amount to be transferred.
+
+Expected outcome: System should transfer the correct amount to the money market account and display a receipt to show the transaction between the correct accounts involved
+
+Acutal outcome: System gives error message; “Invalid account type“",,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0006n:,,,,,,,,,,26/Jan/23 11:30 AM;63c9bb8fd7f68827e6b65911;Defect still exists in version 1.1,In Progress
+ET (V1.0) Transfer - System transfers wrong amount. Fixed in version 1.1,GD438-31,10030,Task,Done,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,Done,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,26/Jan/23 11:08 AM,26/Jan/23 12:16 PM,26/Jan/23 7:13 PM,26/Jan/23 11:33 AM,1.0,,0,,"Initial state of the system: System is displaying amount to be transferred to
+
+Input: Enter amount to be transferred
+
+Expected Outcome: System should transfer the correct amount between accounts and display a receipt to show the transaction between the correct accounts involved.
+
+Actual Outcome: System transfers wrong amount($0.5 less) to the expected account. System also displays wrong To and From account information on receipt.",,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00067:,,,,,,,,,,26/Jan/23 11:33 AM;63c9bb8fd7f68827e6b65911;Fixed in version 1.1,Done
+ET (V1.0) Inquiry - Making inquiry on the money market account,GD438-30,10029,Task,In Progress,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,26/Jan/23 11:05 AM,26/Jan/23 11:40 AM,26/Jan/23 7:13 PM,,1.0,,0,,"Initial System State: System is displaying a menu of account types to inquire from
+
+Input: Select Money Market account
+
+Expected Outcome: System should print a correct receipt showing the current balance of the Money Market account
+
+Actual Outcome: System shows “Unknown Error“ message  and displays a receipt with the balance of the Savings account instead of the money market account.",,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0005z:,,,,,,,,,,26/Jan/23 11:33 AM;63c9bb8fd7f68827e6b65911;Defect still exists in version 1.1,In Progress
+ET (V1.0) Inquiry - System should display all three accounts to inquire from but only displays two accounts. Fixed in version 1.1,GD438-28,10027,Task,Done,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,Done,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,26/Jan/23 11:01 AM,26/Jan/23 12:16 PM,26/Jan/23 7:13 PM,26/Jan/23 11:29 AM,1.0,,0,,"Input: Choose Balance Inquiry
+
+Expected Outcome: System should display three accounts to select from.(Checking, Savings and Money Market)
+
+Actual Outcome: System only displays Checking and Money Market accounts",,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0005j:,,,,,,,,,,26/Jan/23 11:29 AM;63c9bb8fd7f68827e6b65911;Fixed in version 1.1,Done
+V1.0 MFT Transfer - System should perform a legitimate transfer transaction properly. Fixed in version 1.1,GD438-26,10025,Task,Done,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,Done,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,26/Jan/23 10:56 AM,26/Jan/23 12:15 PM,26/Jan/23 7:13 PM,26/Jan/23 11:34 AM,1.0,,0,,"Input: Enter a legitimate dollar amount.
+
+Actual Outcome: System accepted envelop; However, the system prints a wrong receipt showing a wrong amount($10 less) deposited into the chosen account.
+
+Expected Outcome: System performs a legitimate transfer transaction.
+
+Tried to transfer $20 from checking to savings account but the system only transfers $19.5. System also shows a wrong receipt showing From: Savings to: Checking instead of Checking to Savings.
+
+!image-20230126-175624.png|width=850,height=553!",,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,,,,,,,,,,,26/Jan/23 10:56 AM;ug:20aeb5f8-3247-4257-920a-dff7675da6d1;image-20230126-175624.png;https://jackbarrie1341.atlassian.net/secure/attachment/10003/image-20230126-175624.png,,,,,,,,,,,,,,,,0|i00053:,,,,,,,,,,26/Jan/23 11:34 AM;63c9bb8fd7f68827e6b65911;Fixed in version 1.1,Done
+ET (V1.0)- System fails to deposit money into savings account,GD438-25,10024,Task,In Progress,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,,Esohe Aideyan,63d016ba0d930a766df0523b,Esohe Aideyan,63d016ba0d930a766df0523b,Esohe Aideyan,63d016ba0d930a766df0523b,25/Jan/23 7:39 PM,26/Jan/23 12:26 PM,26/Jan/23 7:13 PM,,,,0,,"Input: Login with card 1, select deposit option and then savings account, user enters dollar amount to deposit ($200)
+
+Actual: System displayed correct amount requested to deposit, however total balance amount was off by $10 and available amount displayed was incorrect
+
+Expected: System should display “click to insert envelope” option and then provide a receipt of transaction and then ask the user if they would like to perform another transaction or not
+
+V1.1:
+
+Actual: System displayed correct amount requested to deposit on the receipt, however total balance amount was off by $0.1 (10 cents).",,Esohe Aideyan,63d016ba0d930a766df0523b,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0004v:,,,,,,,,,,,In Progress
+(V1.0) - System not accepting correct pin immediately after initially entering incorrect pin,GD438-24,10023,Task,In Progress,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,,Tamunomiete Brown,63d1dfe1c7e5fd35203beac7,Tamunomiete Brown,63d1dfe1c7e5fd35203beac7,Tamunomiete Brown,63d1dfe1c7e5fd35203beac7,25/Jan/23 7:37 PM,26/Jan/23 4:44 PM,26/Jan/23 7:13 PM,,,,0,,"Input: Enter a correct pin when asked to re-enter pin
+
+Actual Outcome: System asks to enter the correct pin again
+
+Expected Outcome: Original transaction completes successfully",,Tamunomiete Brown,63d1dfe1c7e5fd35203beac7,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0004n:,,,,,,,,,,,In Progress
+MFT (V1.0)  - Deposit adds incorrect amount of funds to money market,GD438-23,10022,Task,In Progress,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,,,,Jack Barrie,63d19e42ed33fd0707b90a2a,Jack Barrie,63d19e42ed33fd0707b90a2a,25/Jan/23 7:36 PM,26/Jan/23 2:50 PM,26/Jan/23 2:48 PM,,,,0,,"Input:
+
+Login with card 2, select deposit, deposit $20
+
+Expected output:
+
+System prints receipt and adds $20 to money market
+
+Actual Output:
+
+System adds $10 to account",,Jack Barrie,63d19e42ed33fd0707b90a2a,,,,,,,,,GD438-35,,,,,,,,,,,,,,,,,,0|hzzzzl:,,,,,,,,,,,In Progress
+ET (V1.0) - System fails to deposit money into checkings account,GD438-22,10021,Task,In Progress,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,,Esohe Aideyan,63d016ba0d930a766df0523b,Esohe Aideyan,63d016ba0d930a766df0523b,Esohe Aideyan,63d016ba0d930a766df0523b,25/Jan/23 7:36 PM,26/Jan/23 12:26 PM,26/Jan/23 7:13 PM,,,,0,,"Input: Login with card 1 details, select deposit as transaction type, then select checkings account and then user enter dollar amount to deposit ($20)
+
+Actual: System displayed “Last transaction was canceled” however user did not click cancel option. The system did not also display “click to insert envelope” option and finally did not provide a receipt of the transaction
+
+Expected: System should display “click to insert envelope” option and then provide a receipt of transaction as well as an option to perform another transaction or not
+
+V1.1:
+
+Actual: System displayed “click to insert envelope” option and provided a receipt of transaction however the amount on the receipt was incorrect and off by $0.1 (10 cents)",,Esohe Aideyan,63d016ba0d930a766df0523b,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00047:,,,,,,,,,,,In Progress
+MFT (V1.0) - Deposit adds incorrect amount of funds to chequing account,GD438-21,10020,Task,In Progress,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,,,,Jack Barrie,63d19e42ed33fd0707b90a2a,Jack Barrie,63d19e42ed33fd0707b90a2a,25/Jan/23 7:33 PM,26/Jan/23 2:48 PM,26/Jan/23 2:46 PM,,,,0,,"Input:
+
+Login, select deposit, select chequing, deposit $100
+
+Expected output:
+
+System accepts funds and adds $100 to chequing account
+
+Actual Output:
+
+System adds $90 to chequing account ",,Jack Barrie,63d19e42ed33fd0707b90a2a,,,,,,,,,,,,,,,,,,,,,,,,,,,0|hzzzzn:,,,,,,,,,,,In Progress
+ET (V1.0) - System fails to withdraw from Money Market account with less than current amount,GD438-20,10019,Task,In Progress,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,,Esohe Aideyan,63d016ba0d930a766df0523b,Esohe Aideyan,63d016ba0d930a766df0523b,Esohe Aideyan,63d016ba0d930a766df0523b,25/Jan/23 7:32 PM,26/Jan/23 12:26 PM,26/Jan/23 7:13 PM,,,,0,,"Input: Select Money Market account type and select an amount less than current amount in the account
+
+Actual: System displayed “invalid account type” and prompted if the user would like to do another transaction
+
+Expected: Receipt of transaction as well as system asking if customer would like to perform another transaction",,Esohe Aideyan,63d016ba0d930a766df0523b,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0003r:,,,,,,,,,,26/Jan/23 11:21 AM;63d016ba0d930a766df0523b;Defect still exists in version 1.1,In Progress
+Inquiry(V1.0) - Cannot inquire from money market ; Fixed in V1.1,GD438-19,10018,Task,Done,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,Done,Tamunomiete Brown,63d1dfe1c7e5fd35203beac7,Tamunomiete Brown,63d1dfe1c7e5fd35203beac7,Tamunomiete Brown,63d1dfe1c7e5fd35203beac7,25/Jan/23 7:30 PM,26/Jan/23 4:46 PM,26/Jan/23 7:13 PM,26/Jan/23 4:42 PM,,,0,,"Input: Choose money market to inquire from
+
+Actual Outcome: System did not perform the inquiry; printed “Invalid account type” to the screen and asked “Wood you like to make another transaction?”
+
+Expected Outcome: System prints a correct receipt showing correct balance; System records transaction correctly in the log (showing both message to the bank and approval back)",,Tamunomiete Brown,63d1dfe1c7e5fd35203beac7,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0003j:,,,,,,,,,,,Done
+MFT (V1.0)  - Cannot withdraw funds in account - Fixed in V1.1,GD438-18,10017,Task,Done,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,Done,,,Jack Barrie,63d19e42ed33fd0707b90a2a,Jack Barrie,63d19e42ed33fd0707b90a2a,25/Jan/23 7:29 PM,26/Jan/23 2:43 PM,26/Jan/23 2:42 PM,26/Jan/23 2:43 PM,,,0,,"Input:
+
+Atm has $100, login with card 2, select withdraw, select chequing, withdraw $100 from the account
+
+Expected Output:
+
+ATM dispenses $100 and account balance is updated
+
+Actual Output:
+
+System displays insufficient cash available",,Jack Barrie,63d19e42ed33fd0707b90a2a,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00001:,,,,,,,,,,,Done
+"ET - Withdraw from savings account, with less amount than current amount, Fixed in V1.1",GD438-17,10016,Task,Done,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,Done,Esohe Aideyan,63d016ba0d930a766df0523b,Esohe Aideyan,63d016ba0d930a766df0523b,Esohe Aideyan,63d016ba0d930a766df0523b,25/Jan/23 7:27 PM,26/Jan/23 12:26 PM,26/Jan/23 7:13 PM,26/Jan/23 10:51 AM,,,0,,"V1.0:
+
+Input: Select withdraw option in savings account and select an amount less than the current amount
+
+Actual: System displayed incorrect value requested and total balance displayed on the receipt was incorrect as well
+
+Expected: System should display receipt with correct requested amount and correct total balance after transaction. It should also ask if the user wants to perform another transaction
+
+V1.1:
+
+Actual: As expected",,Esohe Aideyan,63d016ba0d930a766df0523b,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00033:,,,,,,,,,,,Done
+Inquiry(V1.0) - missing an account type ; Fixed in V1.1,GD438-16,10015,Task,Done,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,Done,Tamunomiete Brown,63d1dfe1c7e5fd35203beac7,Tamunomiete Brown,63d1dfe1c7e5fd35203beac7,Tamunomiete Brown,63d1dfe1c7e5fd35203beac7,25/Jan/23 7:26 PM,26/Jan/23 4:46 PM,26/Jan/23 7:13 PM,26/Jan/23 4:41 PM,,,0,,"Input: Choose Inquiry transaction
+
+Actual Outcome: System is missing Savings account type
+
+Expected Outcome: System displays a menu of account types",,Tamunomiete Brown,63d1dfe1c7e5fd35203beac7,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0002v:,,,,,,,,,,,Done
+"ET (V1.0)- System approved withdrawal request from checkings account with amount greater than current amount, Fixed in V1.1",GD438-15,10014,Task,Done,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,Done,Esohe Aideyan,63d016ba0d930a766df0523b,Esohe Aideyan,63d016ba0d930a766df0523b,Esohe Aideyan,63d016ba0d930a766df0523b,25/Jan/23 7:22 PM,26/Jan/23 12:26 PM,26/Jan/23 7:13 PM,26/Jan/23 10:47 AM,,,0,,"V1.0:
+
+Input: Click on withdraw option and select an amount greater than the current amount
+
+Actual: Amount displayed was incorrect, and the balance was incorrect as well
+
+Expected: System should display “Insufficient cash available” and ask the user if another transaction should be performed or not
+
+V1.1:
+
+Actual: As Expected
+
+Expected: System should display “Insufficient cash available” and ask the user if another transaction should be performed or not",,Esohe Aideyan,63d016ba0d930a766df0523b,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0002n:,,,,,,,,,,26/Jan/23 11:36 AM;63d016ba0d930a766df0523b;Fixed in version 1.1,Done
+Transfer (V1.0) - System does not complete transfer between accounts,GD438-13,10012,Task,In Progress,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,,Tamunomiete Brown,63d1dfe1c7e5fd35203beac7,Tamunomiete Brown,63d1dfe1c7e5fd35203beac7,Tamunomiete Brown,63d1dfe1c7e5fd35203beac7,25/Jan/23 7:19 PM,26/Jan/23 4:39 PM,26/Jan/23 2:28 PM,,,,0,,"Input: Enter a legitimate dollar amount
+
+Actual Outcome: System did not perform the transfer; printed “Invalid of account type” to the screen and asked “Wood you like to make another transaction?”
+
+Expected Outcome: System prints a correct receipt showing amount and correct updated balance; System records transaction correctly in the log (showing both message to the bank and approval back)",,Tamunomiete Brown,63d1dfe1c7e5fd35203beac7,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00027:,,,,,,,,,,,In Progress
+ET (V1.0) - System failed to withdraw from checking account with amount less than current amount - Fixed in V1.1,GD438-12,10011,Task,Done,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,Done,Esohe Aideyan,63d016ba0d930a766df0523b,Esohe Aideyan,63d016ba0d930a766df0523b,Esohe Aideyan,63d016ba0d930a766df0523b,25/Jan/23 7:18 PM,26/Jan/23 11:32 AM,26/Jan/23 7:13 PM,26/Jan/23 10:24 AM,,,0,,"V1.0:
+
+Input: Click on withdraw option for checkings account
+
+Actual outcome: Amount displayed was incorrect, and the balance was incorrect as well
+
+Expected: Receipt shows all information concerning the transaction. Withdraw amount of should be shown and balance as well
+
+V1.1:
+
+Fixed: System performed withdrawal operation, and displayed receipt with accurate information and proceeded to ask if the user would like to perform another transaction",,Esohe Aideyan,63d016ba0d930a766df0523b,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0001z:,,,,,,,,,,,Done
+MFT (V1.0)  - Can withdraw money without charging account - Partially Fixed in V1.1,GD438-11,10010,Task,In Progress,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,,,,Jack Barrie,63d19e42ed33fd0707b90a2a,Jack Barrie,63d19e42ed33fd0707b90a2a,25/Jan/23 7:18 PM,26/Jan/23 2:42 PM,26/Jan/23 2:39 PM,,,,0,,"Input:
+
+Login using card 2, select withdraw, press key 6, 7, 8, 9 or 0
+
+Expected Output:
+
+System tells user to select a correct amount
+
+Actual Output:
+
+System dispenses $20 every time key is pressed without charging account
+
+
+
+V1.1:
+
+Input:
+
+Login using card 2, select withdraw, press key 6
+
+Expected Output:
+
+System tells user to select a correct amount
+
+Actual Output:
+
+System dispenses $20 when key 6 is pressed",,Jack Barrie,63d19e42ed33fd0707b90a2a,,,,,,,,,,,,,,,,,,,,,,,,,,,0|hzzzz3:,,,,,,,,,,,In Progress
+MFT (V1.0) - System withdraws incorrect amount of money - Fixed in V1.1,GD438-9,10008,Task,Done,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,Done,,,Jack Barrie,63d19e42ed33fd0707b90a2a,Jack Barrie,63d19e42ed33fd0707b90a2a,25/Jan/23 7:07 PM,26/Jan/23 2:39 PM,26/Jan/23 2:37 PM,26/Jan/23 2:39 PM,,,0,,"Input:
+
+Login, select withdraw, withdraw $20
+
+Expected output:
+
+System dispenses $20 and updates balance correctly
+
+Actual Output:
+
+System dispenses $40",,Jack Barrie,63d19e42ed33fd0707b90a2a,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i00003:,,,,,,,,,,,Done
+Invalid Pin (V1.0) - Correct entry of pin on third try isn't accepted,GD438-8,10007,Task,In Progress,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,,,,Jack Barrie,63d19e42ed33fd0707b90a2a,Jack Barrie,63d19e42ed33fd0707b90a2a,25/Jan/23 6:49 PM,26/Jan/23 2:37 PM,26/Jan/23 2:35 PM,,,,0,,"Input: 
+
+Enter incorrect pin, then enter incorrect PIN the second and third times, then enter correct PIN
+
+Expected output:
+
+Original transaction completes successfully
+
+Actual Output:
+
+System asks to enter pin instead of accepting pin ",,Jack Barrie,63d19e42ed33fd0707b90a2a,,,,,,,,,,,,,,,,,,,,,,,,,,,0|hzzzzb:,,,,,,,,,,,In Progress
+Invalid Pin (V1.0) - Correct entry of pin on second re-entry isnt accepted,GD438-7,10006,Task,In Progress,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,,,,Jack Barrie,63d19e42ed33fd0707b90a2a,Jack Barrie,63d19e42ed33fd0707b90a2a,25/Jan/23 6:47 PM,26/Jan/23 2:35 PM,26/Jan/23 2:34 PM,,,,0,,"Input:
+
+Enter incorrect pin, when system asks for re-entry, enter incorrect pin, when system asks for re-entry, enter correct pin
+
+Expected Output:
+
+Original transaction completes successfully
+
+Actual output:
+
+System asks to enter pin instead of accepting pin",,Jack Barrie,63d19e42ed33fd0707b90a2a,,,,,,,,,,,,,,,,,,,,,,,,,,,0|hzzzzj:,,,,,,,,,,,In Progress
+Invalid Pin (V1.0) - System doesnt accept correct pin,GD438-6,10005,Task,In Progress,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,,,,Jack Barrie,63d19e42ed33fd0707b90a2a,Jack Barrie,63d19e42ed33fd0707b90a2a,25/Jan/23 6:44 PM,26/Jan/23 2:34 PM,26/Jan/23 2:34 PM,,,,0,,"Input:
+
+Enter incorrect pin, then when system asks for re-entry, enter correct pin
+
+Expected output:
+
+Original transaction completes successfully
+
+Actual Output:
+
+System asks to please enter pin instead of accepting correct pin",,Jack Barrie,63d19e42ed33fd0707b90a2a,,,,,,,,,,,,,,,,,,,,,,,,,,,0|hzzzzr:,,,,,,,,,,,In Progress
+ Transfer (V1.0) - Cancel transaction - Fixed in V1.1,GD438-4,10003,Task,Done,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,Done,,,Jack Barrie,63d19e42ed33fd0707b90a2a,Jack Barrie,63d19e42ed33fd0707b90a2a,25/Jan/23 6:35 PM,26/Jan/23 2:34 PM,26/Jan/23 2:32 PM,26/Jan/23 2:34 PM,,,0,,"Input: 
+
+Cancel transaction before entering dollar amount
+
+Expected Output:
+
+System displays an appropriate message and offers customer the option of choosing to do another transaction or not.
+
+Actual output:
+
+System prints “Wood you like to start another transaction” instead of “would”",,Jack Barrie,63d19e42ed33fd0707b90a2a,,,,,,,,,,,,,,,,,,,,,,,,,,,0|i0000f:,,,,,,,,,,,Done
+MFT (V1.0) - System approved withdrawal request from checkings account for amount greater than current amount balance - Fixed V1.1,GD438-3,10002,Task,Done,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,Done,Esohe Aideyan,63d016ba0d930a766df0523b,Esohe Aideyan,63d016ba0d930a766df0523b,Esohe Aideyan,63d016ba0d930a766df0523b,25/Jan/23 6:34 PM,26/Jan/23 11:33 AM,26/Jan/23 7:13 PM,26/Jan/23 10:35 AM,,,0,,"V1.0:
+
+Input: Chooses an amount that the system currently has but which is greater than the account balance
+
+Actual Outcome: System approved withdrawal despite amount requested being greater than current amount balance and offers customer the option of choosing to do another transaction or not
+
+Expected Outcome: System displays an appropriate message and offers customer the option of choosing to do another transaction or not
+
+From the picture, I initialized the system with $100 and tried to withdraw $200. The system approved the request and withdrew $20 
+
+V1.1:
+
+Fixed: System denied the request for withdrawal and displayed “Insufficient cash available” and also asked the user if another transaction would like to be performed or not.",,Esohe Aideyan,63d016ba0d930a766df0523b,,,,,,,,,,,25/Jan/23 6:32 PM;ug:0193c3de-e7a3-4c00-9e75-116e0bb45eb2;2023-01-25 (4).png;https://jackbarrie1341.atlassian.net/secure/attachment/10001/2023-01-25+%284%29.png,,,,,,,,,,,,,,,,0|i00007:,,,,,,,,,,,Done
+V1.0 MFT Deposit - Insert an envelope,GD438-2,10001,Task,In Progress,GD438,438 Assignment 1,software,Jack Barrie,63d19e42ed33fd0707b90a2a,,Medium,,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,25/Jan/23 6:29 PM,26/Jan/23 11:40 AM,25/Jan/23 6:35 PM,,1.0,,0,Deposit,"Input: Click Insert an envelope.
+
+Actual Outcome: System accepted envelop; However, the system prints a wrong receipt showing a wrong amount($10 less) deposited into the chosen account.
+
+Expected Outcome: System accepts envelope; System prints a correct receipt showing amount and correct updated balance; System records transaction correctly in the log (showing message to the bank, approval back, and acceptance of the envelope)
+
+ 
+
+Tried to deposit $200 into savings account with an original balance of $1000.  However, system only deposits $190 instead of $200.
+
+!image-20230126-173328.png|width=827,height=550!",,Dyenaan Dapoet,63c9bb8fd7f68827e6b65911,,,,,,,,,,,26/Jan/23 10:35 AM;ug:20aeb5f8-3247-4257-920a-dff7675da6d1;image-20230126-173328.png;https://jackbarrie1341.atlassian.net/secure/attachment/10002/image-20230126-173328.png,,,,,,,,,,,,,,,,0|hzzzzz:,,,,,,,,,,26/Jan/23 11:40 AM;63c9bb8fd7f68827e6b65911;Defect still exists in version 1.1. System does not fully deposit the amount stated. ($0.10) less.,In Progress
